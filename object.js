@@ -134,4 +134,25 @@ const user4 = {};
 Object.assign(user4, user); //(target, source)
 console.log(user4);
 
-//const user4 =Object.assign({}, user); 위와 동일한 결과
+//const user4 = Object.assign({}, user); 위와 동일한 결과
+
+//note!! shift,unshift are slower than pop,push
+//splice: remove an item by index position
+//concat: combine two arrays
+
+//5.Searching
+
+//indexOf: find the index
+const fruits = ["🍎", "🍊", "🍑", "🍓"];
+console.log(fruits.indexOf("🍎")); //0
+console.log(fruits.indexOf("🥨")); //-1
+
+//includes: boolean
+console.log(fruits.includes("🍊")); //true
+console.log(fruits.includes("🥐")); //false
+
+//lastIndexOf
+fruits.push("🍎");
+console.log(fruits);
+console.log(fruits.indexOf("🍎")); //0
+console.log(fruits.lastIndexOf("🍎")); //4
