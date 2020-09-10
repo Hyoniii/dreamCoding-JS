@@ -134,4 +134,4 @@ const user4 = {};
 Object.assign(user4, user); //(target, source)
 console.log(user4);
 
-//const user4 =Object.assign({}, user); 위와 동일한 결과
+//const user4 = Object.assign({}, user); 위와 동일한 결과
